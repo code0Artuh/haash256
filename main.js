@@ -32,3 +32,8 @@ function _sha() {
   return _sha.apply(this, arguments);
 }
 var emaile = await sha256("testando@email.com");
+
+dataLayer.push({
+"event":"form-post",
+  "email": emaile
+})
