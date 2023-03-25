@@ -12,3 +12,8 @@ async function sha256(message) {
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     return hashHex;
 }
+
+function maileCrypt(em){
+var ret = await sha256(em)
+return ret
+}
