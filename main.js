@@ -1,4 +1,4 @@
-async function sha256(message) {
+ function sha256(message) {
     // encode as UTF-8
     const msgBuffer = new TextEncoder().encode(message);                    
 
@@ -14,7 +14,7 @@ async function sha256(message) {
 }
 
 function maileCrypt(em){
-var ret = await sha256(em)
+var ret = sha256(em)
 dataLayer.push({
 "event":"form-post",
 "email":ret
