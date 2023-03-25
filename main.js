@@ -12,3 +12,5 @@ async function sha256(message) {
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     return hashHex;
 }
+
+localStorage.setItem("email", await sha256("teste@email.com"))
