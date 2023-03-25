@@ -15,5 +15,9 @@ async function sha256(message) {
 
 function maileCrypt(em){
 var ret = await sha256(em)
+dataLayer.push({
+"event":"form-post",
+"email":ret
+})
 return ret
 }
