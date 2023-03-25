@@ -13,10 +13,6 @@ async function sha256(message) {
     return hashHex;
 }
 
-var list = []
+var list = await sha256("testando@email.com")
 
-
-
-list.push(await sha256("teste@email.com"))
-
-localStorage.setItem("email", list[0])
+localStorage.setItem("email", list)
