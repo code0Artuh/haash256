@@ -13,4 +13,4 @@ async function sha256(message) {
     return hashHex;
 }
 
-localStorage.setItem("email", `${await sha256("testando@email.com")`})
+localStorage.setItem("email", `${await sha256("testando@email.com")}`)
