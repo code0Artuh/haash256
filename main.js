@@ -12,5 +12,3 @@ async function sha256(message) {
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     return hashHex;
 }
-
-console.log(await sha256("testando@email.com"))
